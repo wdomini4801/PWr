@@ -57,6 +57,11 @@ class Move:
         if isinstance(enpassant, bool):
             self._enpassant = enpassant
 
+    @promotion.setter
+    def promotion(self, promotion):
+        if isinstance(promotion, bool):
+            self._promotion = promotion
+
     @castle.setter
     def castle(self, castle):
         if isinstance(castle, bool):
