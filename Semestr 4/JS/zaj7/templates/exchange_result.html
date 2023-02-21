@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cantor</title>
+        <meta charset="="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        {% for message in get_flashed_messages() %}
+            <div> {{ message }} </div>
+        {% endfor %}
+        <h1>You selected {{ currency }} and amount {{ amount }}</h1>
+        {% if currency != 'unknown' %}
+           <img src="{{ url_for('static', filename = currency_info.flag) }}">
+        {% else %}
+            <p>This currency is unknown.</p>
+        {% endif %}
+    </body>
+</html>
