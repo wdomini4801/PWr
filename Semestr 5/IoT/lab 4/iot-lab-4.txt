@@ -1,0 +1,3 @@
+Zadanie 1 - program wyświetla stan przycisków w postaci: X Y, gdzie X to stan czerwonego, a Y zielonego i dodatkowo ma akceptować komendy w stylu: "red on" - zapala czerwoną diodę, "green off" - gasi zieloną
+
+Zadanie 2 - potencjometr wyskalować w przedziale (0, 100), sczytywać z niego wartości co 0,1 s, printować aktualną wartość przez Serial, pokazać na Plotterze
